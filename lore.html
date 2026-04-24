@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore - Night City Navigator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="layout-grid">
+        <!-- HEADER -->
+        <div class="layout-grid__cell">
+            <header>
+                <div class="nav-grid" id="nav-grid">
+                    <a href="index.html" class="nav-logo">NIGHT CITY NAVIGATOR</a>
+                    <nav class="nav-links" id="nav-links">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="districts.html">DISTRICTS</a></li>
+                            <li><span class="active" aria-current="page">LORE</span></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle-cell">
+                        <button id="mobile-nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle Navigation Menu">MENU</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- MAIN LORE CONTENT -->
+        <div class="layout-grid__cell" id="main-content" tabindex="-1">
+            <main>
+                <h1>DATABASE ARCHIVES: LORE</h1>
+                <p>Accessing historical records... <span class="yellow-text">AUTHORIZED</span></p>
+
+                <div class="sparkle-divider">
+                    <img src="images/retro_divider.png" alt="Neon sparkle divider.">
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="content-history">
+                        <img src="images/icon_history.png" alt="" width="40" height="40" aria-hidden="true">
+                        HISTORY OF NIGHT CITY
+                        <span class="toggle-icon">[+]</span>
+                    </button>
+                    <div id="content-history" class="accordion-content">
+                        <p>Founded by Richard Night in 1994, Night City was originally envisioned as a corporate utopia free from oppressive government regulations. After Night's assassination, the city fell into the hands of organized crime before corporations like Arasaka stepped in to establish their own brutal order.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="content-corps">
+                        <img src="images/icon_corp.png" alt="" width="40" height="40" aria-hidden="true">
+                        CORPORATE POWERS
+                        <span class="toggle-icon">[+]</span>
+                    </button>
+                    <div id="content-corps" class="accordion-content">
+                        <p>The true rulers of Night City. Megacorporations like <strong>Arasaka</strong> and <strong>Militech</strong> control the economy, private security forces, and political landscape. Their battles often spill into the streets, affecting all citizens.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="content-gangs">
+                        <img src="images/icon_gang.png" alt="" width="40" height="40" aria-hidden="true">
+                        GANGS AND FACTIONS
+                        <span class="toggle-icon">[+]</span>
+                    </button>
+                    <div id="content-gangs" class="accordion-content">
+                        <p>Vast territories are controlled by local gangs. The Maelstrom modify their bodies to extremes, the Valentinos run Heywood through deep-rooted loyalty, and the Voodoo Boys dominate the net from their stronghold in Pacifica.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="content-tech">
+                        <img src="images/icon_tech.png" alt="" width="40" height="40" aria-hidden="true">
+                        TECHNOLOGY AND CYBERWARE
+                        <span class="toggle-icon">[+]</span>
+                    </button>
+                    <div id="content-tech" class="accordion-content">
+                        <p>Chrome is everything. From neural ports to mantis blades, cybernetic enhancements dictate your capability and survival. Those who augment too much risk suffering from cyberpsychosis.</p>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="layout-grid__cell">
+            <footer>
+                <div class="footer-wrap">
+                    <span class="footer-left">[ NC NAVIGATOR v1.0.4 ]</span>
+                    <span class="footer-center">
+                        <img src="images/footer_eye.png" alt="Scanning red eye." class="footer-eye">
+                    </span>
+                    <span class="footer-right"><span>*** UNAUTHORIZED ACCESS LOGGED ***</span></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Night City Navigator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+    <div class="layout-grid">
+        <!-- HEADER -->
+        <div class="layout-grid__cell">
+            <header>
+                <div class="nav-grid" id="nav-grid">
+                    <a href="index.html" class="nav-logo">NIGHT CITY NAVIGATOR</a>
+                    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+                        <ul>
+                            <li><span class="active" aria-current="page">HOME</span></li>
+                            <li><a href="districts.html">DISTRICTS</a></li>
+                            <li><a href="lore.html">LORE</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle-cell">
+                        <button id="mobile-nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle Navigation Menu">MENU</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- MAIN -->
+        <div class="layout-grid__cell" id="main-content" tabindex="-1">
+            <main>
+                <!-- HERO -->
+                <section class="hero-section" aria-labelledby="hero-title">
+                    <h1 id="hero-title">NIGHT CITY NAVIGATOR</h1>
+                    <p class="yellow-text">YOUR INTERACTIVE GUIDE TO THE DISTRICTS OF THE CITY OF DREAMS</p>
+                    <img src="images/hero_banner_retro.png" alt="Night City skyline with neon signage." class="hero-banner">
+                    <br>
+                    <a href="#interactive-map" class="btn-90s">INITIALIZE MAP</a>
+                    <a href="districts.html" class="btn-90s">LOAD DATA &gt;&gt; DISTRICTS</a>
+                    <br><br>
+                    <p class="cyan-text">*** SYSTEM ONLINE ***</p>
+                    <div class="netscape-badge">
+                        <img src="images/netscape_badge.png" alt="Netscape Navigator badge graphic.">
+                    </div>
+                </section>
+
+                <!-- LORE INTRO -->
+                <div class="database-entry">
+                    <p class="yellow-text"><strong>&gt;&gt;&gt; DATABASE ENTRY: 0x8A1 &lt;&lt;&lt;</strong></p>
+                    <p>Welcome to Night City. Voted the worst place to live in America. From the corporate fortresses of the City Center to the lawless ruins of Pacifica, danger and opportunity wait around every corner. Keep your iron loaded and your cyberware updated.</p>
+                </div>
+            </main>
+        </div>
+
+        <!-- INTERACTIVE MAP -->
+        <div class="layout-grid__cell">
+            <h2 id="interactive-map" tabindex="-1">INTERACTIVE MAP OVERRIDE</h2>
+            <p>Click a district on the map to view quick stats.</p>
+            <div class="map-flex">
+                <div class="map-flex-map">
+                    <div class="map-container" id="night-city-map">
+                        <img src="images/night_city_map.png"
+                             alt="Night City district map illustration."
+                             usemap="#ncmap">
+                        <map name="ncmap">
+                            <area shape="rect" coords="150,150,250,250" href="#" alt="City Center district."   class="map-region" data-name="City Center"   tabindex="0" aria-label="City Center district">
+                            <area shape="rect" coords="0,0,200,150"     href="#" alt="Watson district."        class="map-region" data-name="Watson"        tabindex="0" aria-label="Watson district">
+                            <area shape="rect" coords="200,0,400,150"   href="#" alt="Westbrook district."     class="map-region" data-name="Westbrook"     tabindex="0" aria-label="Westbrook district">
+                            <area shape="rect" coords="150,250,350,400" href="#" alt="Heywood district."       class="map-region" data-name="Heywood"       tabindex="0" aria-label="Heywood district">
+                            <area shape="rect" coords="0,150,150,400"   href="#" alt="Pacifica district."      class="map-region" data-name="Pacifica"      tabindex="0" aria-label="Pacifica district">
+                            <area shape="rect" coords="350,150,400,400" href="#" alt="Santo Domingo district." class="map-region" data-name="Santo Domingo" tabindex="0" aria-label="Santo Domingo district">
+                        </map>
+                    </div>
+                </div>
+                <div class="map-flex-panel">
+                    <h3>DISTRICT SCAN DATA</h3>
+                    <div class="district-info-panel" aria-live="polite" aria-atomic="true">
+                        <h3 id="info-name" class="cyan-text" style="font-weight:bold;font-size:1.1em;margin-top:0;">Awaiting Selection...</h3>
+                        <p><strong>Description:</strong> <span id="info-desc">Select a region on the map.</span></p>
+                        <p><strong>Threat Level:</strong> <span id="info-threat" class="yellow-text">Unknown</span></p>
+                        <p><strong>Controlling Corp/Faction:</strong> <span id="info-corp" class="magenta-text">Unknown</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="layout-grid__cell">
+            <footer>
+                <div class="footer-wrap">
+                    <span class="footer-left">[ NC NAVIGATOR v1.0.4 ]</span>
+                    <span class="footer-center">
+                        <img src="images/footer_eye.png" alt="Scanning red eye." class="footer-eye">
+                    </span>
+                    <span class="footer-right"><span>*** UNAUTHORIZED ACCESS LOGGED ***</span></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Districts - Night City Navigator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="layout-grid">
+        <!-- HEADER -->
+        <div class="layout-grid__cell">
+            <header>
+                <div class="nav-grid" id="nav-grid">
+                    <a href="index.html" class="nav-logo">NIGHT CITY NAVIGATOR</a>
+                    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><span class="active" aria-current="page">DISTRICTS</span></li>
+                            <li><a href="lore.html">LORE</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle-cell">
+                        <button id="mobile-nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle Navigation Menu">MENU</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="layout-grid__cell" id="main-content" tabindex="-1">
+            <main>
+                <h1>DISTRICT DATABASE</h1>
+                <p class="yellow-text">Click any district card to access full intel.</p>
+
+                <div class="sparkle-divider">
+                    <img src="images/retro_divider.png" alt="Neon sparkle divider.">
+                </div>
+
+                <!-- District cards: role="button" on <div>, not <article>, to avoid ARIA role conflict -->
+                <div class="district-grid" role="list">
+
+                    <div class="district-card" role="listitem">
+                        <div class="district-card-inner" tabindex="0" role="button" aria-haspopup="dialog" data-district="City Center" aria-label="Open City Center district details">
+                            <h2 class="cyan-text">CITY CENTER</h2>
+                            <img src="images/city_center.png" alt="Arasaka Tower and corporate City Center skyline.">
+                            <p>The corporate heart of Night City. Skyscrapers, neon, and unmatched wealth.</p>
+                            <div><span class="threat-label">Threat: Low</span> <span class="threat-label">Arasaka/Militech</span></div>
+                            <p class="click-hint">[&gt;&gt; CLICK FOR FULL INTEL]</p>
+                        </div>
+                    </div>
+
+                    <div class="district-card" role="listitem">
+                        <div class="district-card-inner" tabindex="0" role="button" aria-haspopup="dialog" data-district="Heywood" aria-label="Open Heywood district details">
+                            <h2 class="cyan-text">HEYWOOD</h2>
+                            <img src="images/heywood.png" alt="Graffiti-lit streets in Heywood.">
+                            <p>The biggest bedroom community in NC. Diverse but dangerous streets run by Valentinos.</p>
+                            <div><span class="threat-label">Threat: Very High</span> <span class="threat-label">Valentinos</span></div>
+                            <p class="click-hint">[&gt;&gt; CLICK FOR FULL INTEL]</p>
+                        </div>
+                    </div>
+
+                    <div class="district-card" role="listitem">
+                        <div class="district-card-inner" tabindex="0" role="button" aria-haspopup="dialog" data-district="Pacifica" aria-label="Open Pacifica district details">
+                            <h2 class="cyan-text">PACIFICA</h2>
+                            <img src="images/pacifica.png" alt="Ruined Pacifica resort buildings.">
+                            <p>Abandoned resort turned lawless combat zone. Netrunner haven.</p>
+                            <div><span class="threat-label">Threat: Extreme</span> <span class="threat-label">Voodoo Boys</span></div>
+                            <p class="click-hint">[&gt;&gt; CLICK FOR FULL INTEL]</p>
+                        </div>
+                    </div>
+
+                    <div class="district-card" role="listitem">
+                        <div class="district-card-inner" tabindex="0" role="button" aria-haspopup="dialog" data-district="Santo Domingo" aria-label="Open Santo Domingo district details">
+                            <h2 class="cyan-text">SANTO DOMINGO</h2>
+                            <img src="images/santo_domingo.png" alt="Santo Domingo industrial power plant.">
+                            <p>Industrial heartland. Factories, power plants, and working-class struggle.</p>
+                            <div><span class="threat-label">Threat: High</span> <span class="threat-label">6th Street</span></div>
+                            <p class="click-hint">[&gt;&gt; CLICK FOR FULL INTEL]</p>
+                        </div>
+                    </div>
+
+                    <div class="district-card" role="listitem">
+                        <div class="district-card-inner" tabindex="0" role="button" aria-haspopup="dialog" data-district="Watson" aria-label="Open Watson district details">
+                            <h2 class="cyan-text">WATSON</h2>
+                            <img src="images/watson.png" alt="Neon market streets in Watson.">
+                            <p>A booming district currently recovering from an earthquake. Vibrant tech markets.</p>
+                            <div><span class="threat-label">Threat: Moderate</span> <span class="threat-label">Maelstrom</span></div>
+                            <p class="click-hint">[&gt;&gt; CLICK FOR FULL INTEL]</p>
+                        </div>
+                    </div>
+
+                    <div class="district-card" role="listitem">
+                        <div class="district-card-inner" tabindex="0" role="button" aria-haspopup="dialog" data-district="Westbrook" aria-label="Open Westbrook district details">
+                            <h2 class="cyan-text">WESTBROOK</h2>
+                            <img src="images/westbrook.png" alt="Japantown neon nightlife in Westbrook.">
+                            <p>Wealthy residential and entertainment zone including Japantown.</p>
+                            <div><span class="threat-label">Threat: Moderate</span> <span class="threat-label">Tyger Claws</span></div>
+                            <p class="click-hint">[&gt;&gt; CLICK FOR FULL INTEL]</p>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="layout-grid__cell">
+            <footer>
+                <div class="footer-wrap">
+                    <span class="footer-left">[ NC NAVIGATOR v1.0.4 ]</span>
+                    <span class="footer-center">
+                        <img src="images/footer_eye.png" alt="Scanning red eye." class="footer-eye">
+                    </span>
+                    <span class="footer-right"><span>*** UNAUTHORIZED ACCESS LOGGED ***</span></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="district-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <button class="modal-close" aria-label="Close district intel modal">[X] CLOSE</button>
+            <h2 id="modal-title" class="cyan-text"></h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+</body>
+</html>

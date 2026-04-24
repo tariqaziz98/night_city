@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Night City Navigator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="layout-grid">
+        <!-- HEADER -->
+        <div class="layout-grid__cell">
+            <header>
+                <div class="nav-grid" id="nav-grid">
+                    <a href="index.html" class="nav-logo">NIGHT CITY NAVIGATOR</a>
+                    <nav class="nav-links" id="nav-links">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="districts.html">DISTRICTS</a></li>
+                            <li><a href="lore.html">LORE</a></li>
+                            <li><span class="active" aria-current="page">ABOUT</span></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle-cell">
+                        <button id="mobile-nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle Navigation Menu">MENU</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- MAIN LORE CONTENT -->
+        <div class="layout-grid__cell" id="main-content" tabindex="-1">
+            <main>
+                <h1>SYSTEM ABOUT</h1>
+
+                <div class="database-entry">
+                    <p class="yellow-text"><strong>>> CREDITS &amp; ACKNOWLEDGEMENTS <<<</strong></p>
+                    <p>This site is an interactive retro district guide for the Cyberpunk 2077 universe, built to resemble the 1990s web format with pure HTML and CSS.</p>
+                    <p>Built for SI 539, University of Michigan.</p>
+                    <br>
+ 
+                    
+                    <div class="sparkle-divider">
+                        <img src="images/retro_divider.png" alt="Neon sparkle divider.">
+                    </div>
+
+                    <h2>ACCESS STATISTICS</h2>
+                    <img src="images/visitor_counter.png" alt="Visitor counter graphic." style="border: 2px solid #00FFFF;">
+                </div>
+            </main>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="layout-grid__cell">
+            <footer>
+                <div class="footer-wrap">
+                    <span class="footer-left">[ NC NAVIGATOR v1.0.4 ]</span>
+                    <span class="footer-center">
+                        <img src="images/footer_eye.png" alt="Scanning red eye." class="footer-eye">
+                    </span>
+                    <span class="footer-right"><span>*** UNAUTHORIZED ACCESS LOGGED ***</span></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
